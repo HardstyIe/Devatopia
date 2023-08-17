@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { myData } from '$lib/store';
-	console.log($myData.fr.appbar.assets);
+	console.log($myData);
 </script>
 
 <div class="relative flex justify-between w-full h-56 item-center">

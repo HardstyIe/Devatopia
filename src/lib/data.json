@@ -209,14 +209,17 @@
       "iconButton": [
         {
           "iconData": 3,
+          "platform": "linkedin",
           "url": "https://www.linkedin.com/company/devatopia"
         },
         {
           "iconData": 2,
+          "platform": "twitter",
           "url": "https://twitter.com/devatopia"
         },
         {
           "iconData": 1,
+          "platform": "instagram",
           "url": "https://instagram.com"
         }
       ],
