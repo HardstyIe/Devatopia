@@ -3,7 +3,7 @@
 </script>
 
 <div class="flex justify-between w-full p-6 bg-devatopia-footer">
-	<div class="w-1/3 text-left">
+	<div class="flex flex-col items-start justify-center w-1/3">
 		<img
 			src={$myData.fr.footer.textButton[0].subtitle}
 			alt="$myData.fr.footer.textButton.title"

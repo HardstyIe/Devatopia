@@ -4,7 +4,8 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				'devatopia-footer': '#3f3d56' // Ajout du préfixe #
+				'devatopia-footer': '#3f3d56', // Ajout du préfixe #
+				'devatopia-green': '#12b09b'
 			}
 		}
 	},
