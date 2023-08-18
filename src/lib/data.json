@@ -9,7 +9,8 @@
       ],
       "assets": {
         "background": "/assets/images/Forme_NavBar.svg",
-        "logo": "/assets/logo_devatopia/devatopia_logo_black.svg"
+        "logo": "/assets/logo_devatopia/devatopia_logo_black.svg",
+        "darkThemeLogo": "/assets/logo_devatopia/devatopia_logo_white.webp"
       }
     },
     "card": {

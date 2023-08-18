@@ -3,7 +3,7 @@
 </script>
 
 <main
-	class="flex flex-col items-center w-full p-6 lg:justify-between lg:flex-row bg-devatopia-footer"
+	class="flex flex-col items-center w-full p-6 text-white dark:text-white lg:justify-between lg:flex-row bg-devatopia-footer"
 >
 	<div class="flex flex-col items-center justify-center w-full lg:w-1/3 lg:items-start">
 		<img
