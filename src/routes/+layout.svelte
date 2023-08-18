@@ -1,0 +1,11 @@
+<script>
+	import Footer from '$lib/components/Footer.svelte';
+	import Navbar from '$lib/components/Navbar.svelte';
+	import '../app.css';
+</script>
+
+<Navbar />
+<div class="container mx-auto mt-20">
+	<slot />
+</div>
+<Footer />
