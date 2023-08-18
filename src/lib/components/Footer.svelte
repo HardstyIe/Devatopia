@@ -37,15 +37,11 @@
 			&copy; 2022-2023 DEVATOPIA Tous droits réservés.
 		</div>
 		<div class="flex justify-center gap-1">
-			<a href="placeholder" title={`Naviguer vers la page Mentions Légales`} class="underline">
+			<a href="#" title={`Naviguer vers la page Mentions Légales`} class="underline">
 				Mentions Légales
 			</a>
 			<p>-</p>
-			<a
-				href="placeholder"
-				title={`Naviguer vers la page Politique de confidentialité`}
-				class="underline"
-			>
+			<a href="#" title={`Naviguer vers la page Politique de confidentialité`} class="underline">
 				Politique de confidentialité
 			</a>
 		</div>
