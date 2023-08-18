@@ -2,3 +2,15 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import 'daisyui/dist/full.css';
+
+body {
+  /* styles pour le mode clair */
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  /* styles pour le mode sombre */
+  background-color: black;
+  color: white;
+}
