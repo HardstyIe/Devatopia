@@ -14,7 +14,7 @@
 		/>
 		<ul>
 			{#each $myData.fr.footer.textButton.slice(1) as textButton}
-				<li class="flex gap-1 my-4 font-extrabold line">
+				<li class="flex gap-1 my-4 font-semibold line">
 					<strong>{textButton.title}:</strong>
 					<p class="underline">{textButton.subtitle}</p>
 				</li>
