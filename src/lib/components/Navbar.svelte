@@ -66,7 +66,7 @@
 		class="fixed top-0 right-0 z-50 w-64 h-full transition-transform duration-300 transform bg-devatopia-footer sidebar"
 		style="transform: translateX({menuOpen ? '0%' : '100%'});"
 	>
-		<ul class="flex flex-col h-full py-4 pl-8 pr-4">
+		<ul class="flex flex-col h-full py-4 pl-8 pr-4 text-white">
 			{#each $myData.fr.appbar.text as text}
 				<li>
 					<a href={`#${text.toLowerCase()}`} class="block py-2 hover:bg-gray-200">{text}</a>
