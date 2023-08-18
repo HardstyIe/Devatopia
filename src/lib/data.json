@@ -18,13 +18,13 @@
           "title": "Maxime Dehay",
           "subtitle": "Associé gérant",
           "text": "Maxime est notre expert dans le développement Mobile, Web et API.",
-          "asset": "/assets/persona/Maxime.svg"
+          "asset": "/assets/persona/Maxime.webp"
         },
         {
           "title": "Alexandre Louis",
           "subtitle": "Associé gérant",
           "text": "Alexandre est notre concepteur UI/UX mais également développeur Mobile, Web et API.",
-          "asset": "/assets/persona/Alexandre.svg"
+          "asset": "/assets/persona/Alexandre.webp"
         }
       ],
       "title": "Développement d'un projet sur mesure",
@@ -35,7 +35,7 @@
       "title": "Une équipe dédiée à votre projet",
       "subtitle": "Nous sommes basés dans le valenciennois et avons pour objectif de répondre à vos besoins. Notre agence est spécialisée dans la conception et le développement de vos applications web et mobile, mais aussi de votre base de données. Pour finir, nous pouvons vous proposer des formations sur nos domaines d'expertise.",
       "assets": {
-        "background": "/assets/persona/desktop.svg"
+        "background": "/assets/persona/desktop.webp"
       }
     },
     "techno": {
@@ -114,10 +114,10 @@
       {
         "title": "Exemple de nos *projets réalisés.",
         "assets": [
-          "/assets/techno_icon/tablette.svg",
-          "/assets/techno_icon/Mobile_One.svg",
+          "/assets/techno_icon/tablette.webp",
+          "/assets/techno_icon/Mobile_One.webp",
           "/assets/techno_icon/Mobile_Two.svg",
-          "/assets/techno_icon/Mobile_Three.svg"
+          "/assets/techno_icon/Mobile_Three.webp"
         ]
       }
     ],
@@ -191,7 +191,7 @@
       "textButton": [
         {
           "title": "LOGO",
-          "subtitle": "/assets/logo_devatopia/devatopia_logo_white.svg"
+          "subtitle": "/assets/logo_devatopia/devatopia_logo_white.webp"
         },
         {
           "title": "Adresse",

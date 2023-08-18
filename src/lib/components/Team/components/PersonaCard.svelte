@@ -7,21 +7,25 @@
 	};
 </script>
 
-<div class="relative p-8 mx-auto mb-12 bg-white rounded-lg shadow-2xl">
+<main
+	class="relative w-48 p-8 mx-auto mb-12 rounded-lg shadow-2xl h-80 sm:w-60 md:w-64 lg:w-72 bg-devatopia-footer"
+>
 	<!-- Image centrée qui déborde en haut -->
 	<div class="flex flex-col justify-center mt-16 text-center card-shadow">
 		<img
 			src={person.asset}
 			alt={person.title}
-			class="absolute w-32 h-32 transform -translate-x-1/2 rounded-full shadow-md left-1/2 -top-16 card-img"
+			class="absolute transform -translate-x-1/2 rounded-full shadow-md left-1/2 -top-16 card-img"
+			width="128"
+			height="128"
 		/>
 
 		<!-- Contenu de la carte -->
-		<h2 class="text-2xl font-bold">{person.title}</h2>
-		<p class="mt-2 text-xl text-gray-600">{person.subtitle}</p>
-		<p class="mt-4 text-base text-gray-500">{person.text}</p>
+		<h2 class="text-xl font-bold text-white md:text-lg">{person.title}</h2>
+		<p class="mt-2 text-sm text-white md:text-base">{person.subtitle}</p>
+		<p class="mt-4 text-sm text-white md:text-sm">{person.text}</p>
 	</div>
-</div>
+</main>
 
 <style>
 	.card-img {
