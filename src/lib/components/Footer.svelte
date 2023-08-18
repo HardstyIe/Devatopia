@@ -28,7 +28,7 @@
 			<ul class="pl-5">
 				{#each $myData.fr.appbar.text as text}
 					<li class="my-4 text-lg list-none">
-						<a href={`#${text.toLowerCase()}`}>{text}</a>
+						<a href={`#${text.toLowerCase()}`} title={`Naviguer vers la section ${text}`}>{text}</a>
 					</li>
 				{/each}
 			</ul>
@@ -37,9 +37,17 @@
 			&copy; 2022-2023 DEVATOPIA Tous droits réservés.
 		</div>
 		<div class="flex justify-center gap-1">
-			<a href="placeholder" class="underline"> Mentions Légales </a>
+			<a href="placeholder" title={`Naviguer vers la page Mentions Légales`} class="underline">
+				Mentions Légales
+			</a>
 			<p>-</p>
-			<a href="placeholder" class="underline"> Politique de confidentialité </a>
+			<a
+				href="placeholder"
+				title={`Naviguer vers la page Politique de confidentialité`}
+				class="underline"
+			>
+				Politique de confidentialité
+			</a>
 		</div>
 	</div>
 
@@ -51,6 +59,7 @@
 					href={iconButton.url}
 					target="_blank"
 					aria-label={iconButton.platform}
+					title={`Naviguer vers ${iconButton.platform}`}
 					class="p-4 border-2 rounded-full hover:bg-gray-100"
 				>
 					{#if iconButton.platform === 'linkedin'}

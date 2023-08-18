@@ -69,7 +69,11 @@
 		<ul class="flex flex-col h-full py-4 pl-8 pr-4 text-white">
 			{#each $myData.fr.appbar.text as text}
 				<li>
-					<a href={`#${text.toLowerCase()}`} class="block py-2 hover:bg-gray-200">{text}</a>
+					<a
+						href={`#${text.toLowerCase()}`}
+						title={`Naviguer vers la section ${text}`}
+						class="block py-2 hover:bg-gray-200">{text}</a
+					>
 				</li>
 			{/each}
 		</ul>
