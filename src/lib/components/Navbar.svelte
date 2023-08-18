@@ -22,7 +22,7 @@
 
 <nav class="relative flex items-center justify-between w-full h-56 bg-transparent">
 	<div class="w-64 p-4 ml-5 bg-transparent">
-		<img src={$myData.fr.appbar.assets.logo} alt="" width="290" height="85" />
+		<img src={$myData.fr.appbar.assets.logo} alt="Logo Devatopia" width="290" height="85" />
 	</div>
 
 	<!-- Navigation pour grands écrans -->
