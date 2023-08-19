@@ -6,10 +6,10 @@
 	let isModalOpen = false;
 	let isPrivacyModalOpen = false;
 
-	let modalTitle = '';
-	let modalContent = '';
+	let modalTitle: string = '';
+	let modalContent: string = '';
 
-	function openModal(type) {
+	function openModal(type: 'legal' | 'privacy') {
 		if (type === 'legal') {
 			modalTitle = 'Mentions Légales';
 			modalContent = 'Contenu des mentions légales ici';
@@ -111,10 +111,15 @@
 	</div>
 </main>
 
-<LegalMention bind:isOpen={isModalOpen} {modalTitle} {modalContent} on:close={handleCloseModal} />
+<LegalMention
+	bind:isOpen={isModalOpen}
+	title={modalTitle}
+	content={modalContent}
+	on:close={handleCloseModal}
+/>
 <PrivacyPolicy
 	bind:isOpen={isPrivacyModalOpen}
-	{modalTitle}
-	{modalContent}
+	title={modalTitle}
+	content={modalContent}
 	on:close={handleCloseModal}
 />

@@ -3,15 +3,17 @@
 	import { createEventDispatcher, onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	const dispatch = createEventDispatcher();
+
 	export let isOpen = false;
-	let modalElement;
+	let modalElement: HTMLElement;
+
 	function closeModal() {
 		dispatch('close');
 	}
 
 	onMount(() => {
 		// Ajout d'un écouteur d'événements au démarrage du composant
-		const handleKeyDown = (e) => {
+		const handleKeyDown = (e: KeyboardEvent) => {
 			if (isOpen) {
 				if (e.key === 'Enter' || e.key === 'Escape') {
 					closeModal();

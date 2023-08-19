@@ -5,7 +5,7 @@
 </script>
 
 <Navbar />
-<div class="container mx-auto mt-20">
+<div class="container h-full mx-auto">
 	<slot />
 </div>
 <Footer />

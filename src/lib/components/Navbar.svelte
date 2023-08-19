@@ -2,11 +2,12 @@
 	import { myData } from '$lib/store';
 	import { onMount } from 'svelte';
 
-	let menuOpen = false;
+	let menuOpen: boolean = false;
 
 	onMount(() => {
-		const closeMenu = (e) => {
-			if (!e.target.closest('.sidebar') && menuOpen) {
+		const closeMenu = (e: MouseEvent) => {
+			const target = e.target as Element; // Assertion de type pour traiter e.target comme un Element
+			if (!target?.closest('.sidebar') && menuOpen) {
 				menuOpen = false;
 			}
 		};
@@ -14,7 +15,7 @@
 		return () => document.removeEventListener('click', closeMenu); // Nettoyage lors de la destruction du composant
 	});
 
-	function toggleMenu() {
+	function toggleMenu(): void {
 		menuOpen = !menuOpen;
 		menuOpen = menuOpen; // Forcer la mise à jour de la réactivité
 	}
@@ -33,7 +34,7 @@
 		<ul class="z-10 flex items-center gap-20 text-white">
 			{#each $myData.fr.appbar.text as text}
 				<li>
-					<a href={`#${text.toLowerCase()}`} class="text-lg">{text}</a>
+					<a href={`/#${text.toLowerCase()}`} class="text-lg">{text}</a>
 				</li>
 			{/each}
 		</ul>

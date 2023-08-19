@@ -2,4 +2,6 @@
 	import LandPage from '$lib/components/LandPage.svelte';
 </script>
 
-<LandPage />
+<div class="min-h-screen">
+	<LandPage />
+</div>

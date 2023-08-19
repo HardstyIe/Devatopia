@@ -5,10 +5,10 @@
 	import TextDesc from './components/TextDesc.svelte';
 </script>
 
-<main class="flex flex-col justify-between w-full gap-8 xl:flex-row">
+<main class="flex flex-col justify-between w-full gap-8 xl:flex-row" id="équipe">
 	<!-- Pour les écrans larges -->
 	<div>
-		<div class="hidden w-full gap-8 xl:flex xl:flex-row">
+		<div class="hidden w-full gap-8 mt-20 xl:flex xl:flex-row">
 			<PersonaCard person={$myData.fr.card.personna[0]} />
 			<TextDesc />
 			<PersonaCard person={$myData.fr.card.personna[1]} />
