@@ -1,24 +1,44 @@
 <script lang="ts">
 	import { myData } from '$lib/store';
-	import { createEventDispatcher } from 'svelte';
+	import { createEventDispatcher, onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	const dispatch = createEventDispatcher();
-
 	export let isOpen = false;
-
+	let modalElement;
 	function closeModal() {
 		dispatch('close');
+	}
+
+	onMount(() => {
+		// Ajout d'un écouteur d'événements au démarrage du composant
+		const handleKeyDown = (e) => {
+			if (isOpen) {
+				if (e.key === 'Enter' || e.key === 'Escape') {
+					closeModal();
+				}
+			}
+		};
+		window.addEventListener('keydown', handleKeyDown);
+
+		// Suppression de l'écouteur d'événements lors de la destruction du composant
+		return () => {
+			window.removeEventListener('keydown', handleKeyDown);
+		};
+	});
+
+	$: if (isOpen && modalElement) {
+		modalElement.focus();
 	}
 </script>
 
 {#if isOpen}
 	<div
+		bind:this={modalElement}
+		tabindex="-1"
 		transition:fade={{ duration: 100 }}
 		class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
 		on:click={closeModal}
-		on:keydown={(e) => e.key === 'Enter' && closeModal()}
 		role="button"
-		tabindex="0"
 		aria-label="Fermer la modale"
 	>
 		<div

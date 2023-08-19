@@ -1,18 +1,29 @@
 <script lang="ts">
 	import { myData } from '$lib/store';
 	import LegalMention from './LegalMention.svelte';
+	import PrivacyPolicy from './PrivacyPolicy.svelte';
+
 	let isModalOpen = false;
+	let isPrivacyModalOpen = false;
+
 	let modalTitle = '';
 	let modalContent = '';
 
-	function openModal(title, content) {
-		modalTitle = title;
-		modalContent = content;
-		isModalOpen = true;
+	function openModal(type) {
+		if (type === 'legal') {
+			modalTitle = 'Mentions Légales';
+			modalContent = 'Contenu des mentions légales ici';
+			isModalOpen = true;
+		} else if (type === 'privacy') {
+			modalTitle = 'Politique de confidentialité';
+			modalContent = 'Contenu de la politique de confidentialité ici';
+			isPrivacyModalOpen = true;
+		}
 	}
 
 	function handleCloseModal() {
 		isModalOpen = false;
+		isPrivacyModalOpen = false;
 	}
 </script>
 
@@ -51,26 +62,13 @@
 			&copy; 2022-2023 DEVATOPIA Tous droits réservés.
 		</div>
 		<div class="flex justify-center gap-1">
-			<a
-				href="#"
-				on:click|preventDefault={() =>
-					openModal('Mentions Légales', 'Contenu des mentions légales ici')}
-				class="underline"
+			<a href="#" on:click|preventDefault={() => openModal('legal')} class="underline"
+				>Mentions Légales</a
 			>
-				Mentions Légales
-			</a>
 			<p>-</p>
-			<a
-				href="#"
-				on:click|preventDefault={() =>
-					openModal(
-						'Politique de confidentialité',
-						'Contenu de la politique de confidentialité ici'
-					)}
-				class="underline"
+			<a href="#" on:click|preventDefault={() => openModal('privacy')} class="underline"
+				>Politique de confidentialité</a
 			>
-				Politique de confidentialité
-			</a>
 		</div>
 	</div>
 
@@ -114,3 +112,9 @@
 </main>
 
 <LegalMention bind:isOpen={isModalOpen} {modalTitle} {modalContent} on:close={handleCloseModal} />
+<PrivacyPolicy
+	bind:isOpen={isPrivacyModalOpen}
+	{modalTitle}
+	{modalContent}
+	on:close={handleCloseModal}
+/>
