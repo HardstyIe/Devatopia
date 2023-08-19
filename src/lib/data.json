@@ -226,12 +226,49 @@
       ],
       "mentions": [
         {
-          "title": "Mentions légales de : www.devatopia.fr \n\n Date de révision : 01 décembre 2022 (01/12/2022). \n\n 1. Mentions d’identification :\n",
-          "subtitle": "*Editeur *:\n\n %SARL %Devatopia \n 15 avenue Alan Turing \n 59410 Anzin.\n RCS de Valenciennes N°920 467 438.\n\n *Directeurs *de *la *publication :\n\n M. Alexandre Louis et M. Maxime Dehay\n\n *Créateur *du *site : \n\n %SARL %Devatopia \n 15 avenue Alan Turing \n 59410 Anzin.\n RCS de Valenciennes N°920 467 438.\n\n *Hébergeur *: \n\n %Autre %Hostinger\n 61 Lordou Vironos Street \n 6023 Larnaca \n Chypre."
+          "title": "Mentions légales de : www.devatopia.fr",
+          "revisionDate": "Date de révision : 01 décembre 2022 (01/12/2022).",
+          "identification": "1. Mentions d’identification :",
+          "sections": [
+            {
+              "title": "Editeur :",
+              "details": [
+                "SARL Devatopia",
+                "15 avenue Alan Turing",
+                "59410 Anzin",
+                "RCS de Valenciennes N°920 467 438."
+              ]
+            },
+            {
+              "title": "Directeurs de la publication :",
+              "details": [
+                "M. Alexandre Louis et M. Maxime Dehay"
+              ]
+            },
+            {
+              "title": "Créateur du site :",
+              "details": [
+                "SARL Devatopia",
+                "15 avenue Alan Turing",
+                "59410 Anzin",
+                "RCS de Valenciennes N°920 467 438."
+              ]
+            },
+            {
+              "title": "Hébergeur :",
+              "details": [
+                "Autre Hostinger",
+                "61 Lordou Vironos Street",
+                "6023 Larnaca",
+                "Chypre"
+              ]
+            }
+          ]
         },
         {
-          "title": "2. Les mentions relatives à la propriété intellectuelle.\n",
-          "subtitle": "*Crédits *photos *: \n\n Les images ou vidéos présentes sur le site %www.devatopia.fr sont la propriété de Devatopia.\n\n *Droits *d’auteurs *: \n\n Tous les textes présents sur le site %www.devatopia.fr sont la propriété de Devatopia."
+          "title": "2. Les mentions relatives à la propriété intellectuelle.",
+          "photoCredits": "Crédits photos : Les images ou vidéos présentes sur le site www.devatopia.fr sont la propriété de Devatopia.",
+          "copyright": "Droits d’auteurs : Tous les textes présents sur le site www.devatopia.fr sont la propriété de Devatopia."
         }
       ]
     }

@@ -1,15 +1,21 @@
 <script lang="ts">
 	import { myData } from '$lib/store';
 	import PersonaCard from './components/PersonaCard.svelte';
+	import TeamDedication from './components/TeamDedication.svelte';
 	import TextDesc from './components/TextDesc.svelte';
 </script>
 
 <main class="flex flex-col justify-between w-full gap-8 xl:flex-row">
 	<!-- Pour les écrans larges -->
-	<div class="hidden w-full gap-8 xl:flex xl:flex-row">
-		<PersonaCard person={$myData.fr.card.personna[0]} />
-		<TextDesc />
-		<PersonaCard person={$myData.fr.card.personna[1]} />
+	<div>
+		<div class="hidden w-full gap-8 xl:flex xl:flex-row">
+			<PersonaCard person={$myData.fr.card.personna[0]} />
+			<TextDesc />
+			<PersonaCard person={$myData.fr.card.personna[1]} />
+		</div>
+		<div class="hidden w-full gap-8 xl:flex xl:flex-row">
+			<TeamDedication />
+		</div>
 	</div>
 
 	<!-- Pour les écrans plus petits -->
@@ -28,5 +34,6 @@
 				</div>
 			</div>
 		</div>
+		<TeamDedication />
 	</div>
 </main>

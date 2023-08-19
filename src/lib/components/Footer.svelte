@@ -1,5 +1,19 @@
 <script lang="ts">
 	import { myData } from '$lib/store';
+	import LegalMention from './LegalMention.svelte';
+	let isModalOpen = false;
+	let modalTitle = '';
+	let modalContent = '';
+
+	function openModal(title, content) {
+		modalTitle = title;
+		modalContent = content;
+		isModalOpen = true;
+	}
+
+	function handleCloseModal() {
+		isModalOpen = false;
+	}
 </script>
 
 <main
@@ -37,11 +51,24 @@
 			&copy; 2022-2023 DEVATOPIA Tous droits réservés.
 		</div>
 		<div class="flex justify-center gap-1">
-			<a href="#" title={`Naviguer vers la page Mentions Légales`} class="underline">
+			<a
+				href="#"
+				on:click|preventDefault={() =>
+					openModal('Mentions Légales', 'Contenu des mentions légales ici')}
+				class="underline"
+			>
 				Mentions Légales
 			</a>
 			<p>-</p>
-			<a href="#" title={`Naviguer vers la page Politique de confidentialité`} class="underline">
+			<a
+				href="#"
+				on:click|preventDefault={() =>
+					openModal(
+						'Politique de confidentialité',
+						'Contenu de la politique de confidentialité ici'
+					)}
+				class="underline"
+			>
 				Politique de confidentialité
 			</a>
 		</div>
@@ -85,3 +112,5 @@
 		</div>
 	</div>
 </main>
+
+<LegalMention bind:isOpen={isModalOpen} {modalTitle} {modalContent} on:close={handleCloseModal} />
