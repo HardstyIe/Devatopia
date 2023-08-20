@@ -65,7 +65,7 @@ const initialData: Data = {
 		},
 		carrousel: [
 			{
-				title: 'Avez vous besoin d’un *accompagnement complet sur-mesure ? Voici nos compétences :',
+				title: 'Avez vous besoin d’un accompagnement complet sur-mesure ? Voici nos compétences :',
 				cards: [
 					{
 						title: 'Développement Mobile',
@@ -78,13 +78,13 @@ const initialData: Data = {
 						title: 'Audit Mobile',
 						text: 'Nous pouvons effectuer un audit de votre application mobile.',
 						asset: '/assets/icon_card/AAudit_Icon.svg',
-						color: '0xFF12B09B',
+						color: '0xFF12B09F',
 						idForm: 2
 					},
 					{
 						title: 'UI/UX Design',
 						text: 'Nous pouvons effectuer les maquettes de vos sites web ou de vos applications mobiles',
-						asset: '/assets/icon_card/UIUX_Icon.svg',
+						asset: '/assets/icon_card/UIUX_Icon.webp',
 						color: '0xFFF695AC',
 						idForm: 2
 					},
@@ -98,7 +98,7 @@ const initialData: Data = {
 					{
 						title: 'Méthodes de développement',
 						text: 'Nous pouvons vous initier aux méthodes de base dans le domaine de la programmation',
-						asset: '/assets/icon_card/MDev_Icon.svg',
+						asset: '/assets/icon_card/MDev_Icon.webp',
 						color: '0xFF12B09B',
 						idForm: 2
 					},
@@ -116,8 +116,8 @@ const initialData: Data = {
 				assets: [
 					'/assets/techno_icon/tablette.webp',
 					'/assets/techno_icon/Mobile_One.webp',
-					'/assets/techno_icon/Mobile_Two.svg',
-					'/assets/techno_icon/Mobile_Three.webp'
+					'/assets/techno_icon/Mobile_Two.webp',
+					'/assets/techno_icon/Mobile_Three.svg'
 				]
 			}
 		],

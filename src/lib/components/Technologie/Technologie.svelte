@@ -7,7 +7,7 @@
 	<article class="hidden w-1/3 lg:flex">
 		<img
 			src={$myData.fr.techno.assets.background}
-			alt="Image Developpement Mobile"
+			alt="Developpement Mobile"
 			class="responsive-image"
 			width="300"
 			height="300"
@@ -39,7 +39,7 @@
 				>
 					<img
 						src={$myData.fr.techno.assets.logos[i]}
-						alt="Image Developpement Mobile"
+						alt="Developpement Mobile"
 						width="50"
 						height="50"
 					/>

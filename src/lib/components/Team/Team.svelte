@@ -21,7 +21,7 @@
 	<!-- Pour les écrans plus petits -->
 	<div class="flex flex-col w-full gap-8 xl:hidden">
 		<TextDesc />
-		<h2 class="mt-10 mb-4 ml-4 text-2xl font-bold text-black">Notre Équipe</h2>
+		<h2 class="text-2xl font-bold text-black lg:text-3xl">Notre Équipe</h2>
 		<div class="flex flex-col justify-between w-full gap-8 mt-8 sm:flex-row">
 			<div class="flex flex-col flex-grow">
 				<div class="flex-grow">
