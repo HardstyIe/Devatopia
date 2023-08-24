@@ -16,9 +16,26 @@
 
 	let isPrivacyModalOpen = false; // Variable pour gérer l'état d'ouverture de la modal
 
-	function handleSubmit() {
+	async function handleSubmit() {
 		if (formData.acceptPolicy) {
-			console.log('Formulaire soumis:', formData);
+			try {
+				const response = await fetch('/api/contact', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/json' },
+					body: JSON.stringify(formData)
+				});
+
+				if (response.ok) {
+					console.log('Email envoyé avec succès.');
+					// Gère le succès ici
+				} else {
+					console.error("Erreur lors de l'envoi de l'email.");
+					// Gère l'erreur ici
+				}
+			} catch (error) {
+				console.error('Erreur:', error);
+				// Gère l'erreur ici
+			}
 		} else {
 			alert('Veuillez accepter les politiques de confidentialité.');
 		}
