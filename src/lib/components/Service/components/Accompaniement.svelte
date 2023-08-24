@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { myData } from '$lib/store';
+	const highlightRegex = /\*(\w+)/g; // Expression régulière pour détecter les mots commençant par "*"
 	function convertColor(color) {
 		const rgb = color.substring(4);
 		return '#' + rgb;
@@ -8,7 +9,15 @@
 
 <main>
 	<article>
-		<h2 class="text-2xl font-bold text-black">{$myData.fr.carrousel[0].title}</h2>
+		<h2 class="text-2xl font-bold text-black">
+			{#each $myData?.fr?.carrousel?.[0]?.title.split(highlightRegex) as part, i}
+				{#if i % 2 === 0}
+					{part}
+				{:else}
+					<span class="text-devatopia-green">{part}</span>
+				{/if}
+			{/each}
+		</h2>
 	</article>
 	<article class="flex justify-center mt-24 gap-14">
 		<div class="grid w-4/5 grid-cols-1 md:grid-cols-2">
@@ -25,6 +34,7 @@
 							alt={card.title}
 							class="rounded-full shadow-md"
 							width="110"
+							loading="lazy"
 							height="110"
 						/>
 					</div>

@@ -65,7 +65,7 @@ const initialData: Data = {
 		},
 		carrousel: [
 			{
-				title: 'Avez vous besoin d’un accompagnement complet sur-mesure ? Voici nos compétences :',
+				title: 'Avez vous besoin d’un *accompagnement complet sur-mesure ? Voici nos compétences :',
 				cards: [
 					{
 						title: 'Développement Mobile',

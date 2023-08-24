@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Contact from './Contact/Contact.svelte';
 	import Service from './Service/Service.svelte';
 	import Team from './Team/Team.svelte';
 	import Technologie from './Technologie/Technologie.svelte';
@@ -8,4 +9,5 @@
 	<Team />
 	<Technologie />
 	<Service />
+	<Contact />
 </div>
