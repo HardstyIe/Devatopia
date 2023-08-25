@@ -122,15 +122,7 @@ const initialData: Data = {
 			}
 		],
 		contact: {
-			inputs: [
-				'Votre nom',
-				'Votre prénom',
-				'Votre Email',
-				'Votre téléphone (Facultatif)',
-				'Votre société (Facultatif)',
-				'Sujet',
-				'Votre message'
-			],
+			inputs: ['name', 'surname', 'email', 'telephone', 'society', 'sujet', 'message'],
 			texts: [
 				"Besoin d'aide pour votre projet, *d'un *devis ?\nContactez-nous !",
 				'Pour nous appeler : du lundi au vendredi de 9h à 18h : *+33 *6 *87 *37 *22 *16',
