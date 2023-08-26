@@ -3,7 +3,7 @@
 	import Information from './components/Information.svelte';
 </script>
 
-<main>
+<main id="contact">
 	<div class="flex flex-col justify-between w-full lg:flex-row">
 		<Information />
 		<Form />
