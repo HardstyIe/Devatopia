@@ -4,6 +4,8 @@
 </script>
 
 <main>
-	<Information />
-	<Form />
+	<div class="flex flex-col justify-between w-full lg:flex-row">
+		<Information />
+		<Form />
+	</div>
 </main>

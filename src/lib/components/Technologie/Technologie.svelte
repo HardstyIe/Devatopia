@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { myData } from '$lib/store';
-	console.log($myData);
 </script>
 
 <main class="flex justify-center w-full mt-20 lg:justify-between" id="technologies">
