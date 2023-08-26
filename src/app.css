@@ -3,7 +3,10 @@
 @import 'tailwindcss/utilities';
 @import 'daisyui/dist/full.css';
 
-html {
+:root {
   scroll-behavior: smooth;
+}
+
+html {
   color: #000000;
 }

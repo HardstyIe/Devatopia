@@ -11,7 +11,7 @@
 					{#if i % 2 === 0}
 						{part}
 					{:else}
-						<span class="text-green-600">{part}</span>
+						<span class="text-devatopia-footer">{part}</span>
 					{/if}
 				{/each}
 			</h2>

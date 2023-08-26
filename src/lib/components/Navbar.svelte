@@ -34,7 +34,7 @@
 		<ul class="z-10 flex items-center gap-20 text-white">
 			{#each $myData.fr.appbar.text as text}
 				<li>
-					<a href={`/#${text.toLowerCase()}`} class="text-lg">{text}</a>
+					<a href={`#${text.toLowerCase()}`} class="text-lg">{text}</a>
 				</li>
 			{/each}
 		</ul>
