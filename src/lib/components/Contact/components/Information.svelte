@@ -4,7 +4,7 @@
 </script>
 
 <main class="flex items-center justify-center w-full">
-	<article class="prose lg:prose-lg">
+	<article class="prose">
 		{#each $myData?.fr?.contact?.texts as contactText}
 			<h2 class="text-2xl font-bold text-black">
 				{#each contactText.split(highlightRegex) as part, i}
