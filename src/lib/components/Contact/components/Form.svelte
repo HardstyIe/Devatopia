@@ -3,17 +3,6 @@
 	import { Toaster, toast } from 'svelte-sonner';
 	import PrivacyPolicy from '../../PrivacyPolicy.svelte';
 
-	let formData = {
-		name: '',
-		surname: '',
-		email: '',
-		telephone: '',
-		society: '',
-		message: '',
-		subject: '',
-		acceptPolicy: false
-	};
-
 	let isPrivacyModalOpen = false;
 
 	function openPrivacyModal() {
@@ -37,20 +26,13 @@
 			return async ({ result, update }) => {
 				// Est exécuté après la réponse du serveur
 
-				if (result.type == 'success') {
+				if (result.type === 'success') {
 					toast.success('Email envoyé avec succès.');
-					(formData.name = ''),
-						(formData.surname = ''),
-						(formData.email = ''),
-						(formData.telephone = ''),
-						(formData.society = ''),
-						(formData.message = ''),
-						(formData.subject = ''),
-						(formData.acceptPolicy = false);
+
 					// Gère le succès ici
 				} else {
-					if (result.status == 400) toast.error(result.data.error);
-					if (result.status == 500) toast.error("Erreur interne lors de l'envoi de l'email.");
+					if (result.status === 400) toast.error(result.data.error);
+					if (result.status === 500) toast.error("Erreur interne lors de l'envoi de l'email.");
 					// Gère l'erreur ici
 				}
 			};
@@ -68,7 +50,6 @@
 					name="name"
 					type="text"
 					placeholder="Nom"
-					bind:value={formData.name}
 					required
 				/>
 			</div>
@@ -86,7 +67,6 @@
 					name="surname"
 					type="text"
 					placeholder="Prénom"
-					bind:value={formData.surname}
 					required
 				/>
 			</div>
@@ -104,7 +84,6 @@
 					name="email"
 					type="email"
 					placeholder="Email"
-					bind:value={formData.email}
 					required
 				/>
 			</div>
@@ -122,7 +101,6 @@
 					name="telephone"
 					type="tel"
 					placeholder="Téléphone"
-					bind:value={formData.telephone}
 				/>
 			</div>
 
@@ -139,7 +117,6 @@
 					name="society"
 					type="text"
 					placeholder="Société"
-					bind:value={formData.society}
 				/>
 			</div>
 
@@ -156,7 +133,6 @@
 					name="subject"
 					type="text"
 					placeholder="Sujet"
-					bind:value={formData.subject}
 					required
 				/>
 			</div>
@@ -173,7 +149,6 @@
 					id="message"
 					name="message"
 					placeholder="Message"
-					bind:value={formData.message}
 					required
 				/>
 
@@ -183,13 +158,13 @@
 						name="acceptPolicy"
 						aria-label="Accept Policy"
 						id="acceptPolicy"
-						bind:checked={formData.acceptPolicy}
+						checked={false}
 					/>
 					<label for="acceptPolicy" class="ml-2 text-sm text-gray-600" />
 					J'accepte les
-					<span class="underline cursor-pointer" on:click={openPrivacyModal}>
+					<a href="#" class="underline cursor-pointer" on:click={openPrivacyModal}>
 						politiques de confidentialité
-					</span>
+					</a>
 				</div>
 
 				<button

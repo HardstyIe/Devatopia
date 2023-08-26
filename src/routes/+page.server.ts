@@ -1,14 +1,31 @@
+import { SMTP_HOST, SMTP_PASS, SMTP_PORT, SMTP_USER } from '$env/static/private';
 import { fail } from '@sveltejs/kit';
-import dotenv from 'dotenv';
 import nodemailer from 'nodemailer';
-import type { Actions } from './$types';
+import type Mail from 'nodemailer/lib/mailer/index.js';
+import { superValidate } from 'sveltekit-superforms/server';
+import { z } from 'zod';
 
-dotenv.config();
+const schema = z.object({
+	email: z.string().email(),
+	subject: z.string(),
+	message: z.string(),
+	name: z.string().min(2).max(50),
+	surname: z.string().min(2).max(50),
+	society: z.string().optional(),
+	telephone: z
+		.string()
+		.regex(/^((\+)33|0)[1-9](\d{2}){4}$/)
+		.optional(),
+	acceptPolicy: z.boolean().default(false)
+});
 
-export const actions: Actions = {
+export const actions = {
 	default: async ({ request }) => {
-		const formData = await request.formData();
-		const policy = formData.get('acceptPolicy');
+		const form = await superValidate(request, schema);
+		if (!form.valid) {
+			return fail(400, { error: form.errors._errors?.[0] ?? 'Une erreur est survenue' });
+		}
+		const policy = form.data.acceptPolicy;
 
 		if (!policy) {
 			return fail(400, {
@@ -17,26 +34,26 @@ export const actions: Actions = {
 			});
 		}
 
-		const email = formData.get('email');
-		const subject = formData.get('subjet');
-		const message = formData.get('message');
-		const name = formData.get('name');
-		const surname = formData.get('surname');
-		const society = formData.get('society');
-		const telephone = formData.get('telephone');
+		const email = form.data.email;
+		const subject = form.data.subject;
+		const message = form.data.message;
+		const name = form.data.name;
+		const surname = form.data.surname;
+		const society = form.data.society;
+		const telephone = form.data.telephone;
 
 		// Création d'un objet de transport SMTP
 		const transporter = nodemailer.createTransport({
-			host: process.env.SMTP_HOST,
-			port: Number(process.env.SMTP_PORT),
+			host: SMTP_HOST,
+			port: Number(SMTP_PORT),
 			auth: {
-				user: process.env.SMTP_USER,
-				pass: process.env.SMTP_PASS
+				user: SMTP_USER,
+				pass: SMTP_PASS
 			}
 		});
 
 		// Options de messagerie
-		const mailOptions = {
+		const mailOptions: Mail.Options = {
 			from: email,
 			to: 'hardstyle.dd@gmail.com',
 			subject: subject,
@@ -52,8 +69,10 @@ export const actions: Actions = {
 
 		try {
 			await transporter.sendMail(mailOptions);
+
 			return { success: true };
-		} catch (error) {
+			// eslint-disable-next-line @typescript-eslint/no-explicit-any
+		} catch (error: any) {
 			return fail(500, { error: error.message });
 		}
 	}
