@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    <!-- Page d'accueil -->
+    <url>
+        <loc>https://devatopia.vercel.app/</loc>
+        <lastmod>2023-08-01</lastmod> <!-- Date de la dernière modification -->
+        <changefreq>monthly</changefreq> <!-- Fréquence de mise à jour estimée -->
+        <priority>1.0</priority> <!-- Priorité la plus élevée pour la page d'accueil -->
+    </url>
+
+    <!-- Section Équipe -->
+    <url>
+        <loc>https://devatopia.vercel.app/#equipe</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Section Technologies -->
+    <url>
+        <loc>https://devatopia.vercel.app/#technologies</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Section Services -->
+    <url>
+        <loc>https://devatopia.vercel.app/#services</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Section Contact -->
+    <url>
+        <loc>https://devatopia.vercel.app/#contact</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Vous pouvez continuer à ajouter d'autres URL en fonction des sections ou pages de votre site -->
+
+</urlset>

@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Devatopia",
+  "url": "https://devatopia.vercel.app",
+  "logo": "https://devatopia.vercel.app/assets/images/favicon.svg",
+  "telephone": "+33687362216",
+  "email": "contact@devatopia.fr",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "15 avenue Alan Turing",
+    "addressLocality": "Anzin",
+    "postalCode": "59410"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/devatopia",
+    "https://twitter.com/devatopia",
+    "https://instagram.com"
+  ],
+  "description": "Basée dans le Valenciennois, Devatopia est votre partenaire idéal pour la création, la refonte et l'amélioration d'applications mobiles et de sites web. Découvrez nos solutions sur mesure pour propulser votre projet en ligne."
+}
