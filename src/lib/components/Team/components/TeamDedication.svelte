@@ -11,24 +11,9 @@
 		<img
 			src={$myData.fr.desk.assets.background}
 			alt={$myData.fr.desk.title}
-			class="max-w-md mx-auto rounded-lg responsive-image"
+			class="max-w-md mx-auto scale-75 rounded-lg lg:scale-100"
 			width="448"
 			height="300"
 		/>
 	</article>
 </section>
-
-<style>
-	@media (min-width: 1024px) and (max-width: 1100px) {
-		.responsive-image {
-			width: 80%; /* Ajustez selon vos besoins */
-			height: auto;
-		}
-	}
-	@media (max-width: 628px) {
-		.responsive-image {
-			width: 90%;
-			height: auto;
-		}
-	}
-</style>
