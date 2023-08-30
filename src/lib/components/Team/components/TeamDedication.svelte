@@ -11,7 +11,7 @@
 		<img
 			src={$myData.fr.desk.assets.background}
 			alt={$myData.fr.desk.title}
-			class="max-w-md px-6 mx-auto scale-75 rounded-lg lg:scale-100"
+			class="max-w-md px-6 mx-auto scale-75 rounded-lg md:px-0 lg:scale-100"
 			width="448"
 			height="300"
 		/>
