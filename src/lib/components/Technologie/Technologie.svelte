@@ -2,7 +2,7 @@
 	import { myData } from '$lib/store';
 </script>
 
-<main class="flex justify-center w-full mt-20 lg:justify-between" id="technologies">
+<section class="flex justify-center w-full mt-20 lg:justify-between" id="technologies">
 	<article class="hidden w-1/3 lg:flex">
 		<img
 			src={$myData.fr.techno.assets.background}
@@ -12,7 +12,7 @@
 			height="300"
 		/>
 	</article>
-	<article class="flex flex-col justify-center w-2/3 gap-3">
+	<article class="flex flex-col justify-center w-full gap-3 lg:w-2/3">
 		<h2 class="text-2xl font-bold text-black lg:text-3xl">{$myData.fr.techno.title}</h2>
 		<p class="mt-2 text-base text-black lg:text-lg">{$myData.fr.techno.subtitle}</p>
 		{#each $myData.fr.techno.infos as info}
@@ -46,7 +46,7 @@
 			{/each}
 		</div>
 	</article>
-</main>
+</section>
 
 <style>
 	@media (min-width: 1024px) and (max-width: 1100px) {

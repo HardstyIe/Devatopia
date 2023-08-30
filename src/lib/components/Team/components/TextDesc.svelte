@@ -2,7 +2,7 @@
 	import { myData } from '$lib/store';
 </script>
 
-<main class="flex flex-col items-center p-8 space-y-6 text-center xl:w-2/5 xl:text-left">
+<section class="flex flex-col items-center p-8 space-y-6 text-center xl:w-2/5 xl:text-left">
 	<h1 class="text-2xl font-bold text-black">{$myData.fr.card.title}</h1>
 	<p class="text-lg text-gray-600 xl:text-base">{$myData.fr.card.subTitle}</p>
 	<a
@@ -11,4 +11,4 @@
 	>
 		{$myData.fr.card.buttonText}
 	</a>
-</main>
+</section>

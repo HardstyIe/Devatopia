@@ -63,7 +63,7 @@
 					Nom
 				</label>
 				<input
-					class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
+					class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-white border border-gray-200 rounded focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
 					id="name"
 					name="name"
 					type="text"
@@ -81,7 +81,7 @@
 					Prénom
 				</label>
 				<input
-					class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white"
+					class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-white border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white"
 					id="surname"
 					name="surname"
 					type="text"
@@ -99,7 +99,7 @@
 					Email
 				</label>
 				<input
-					class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white"
+					class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-white border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white"
 					id="email"
 					name="email"
 					type="email"
@@ -117,7 +117,7 @@
 					Téléphone
 				</label>
 				<input
-					class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white"
+					class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-white border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white"
 					id="telephone"
 					name="telephone"
 					type="tel"
@@ -134,7 +134,7 @@
 					Société
 				</label>
 				<input
-					class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white"
+					class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-white border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white"
 					id="society"
 					name="society"
 					type="text"
@@ -151,7 +151,7 @@
 					Sujet
 				</label>
 				<input
-					class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white"
+					class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-white border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white"
 					id="subject"
 					name="subject"
 					type="text"
@@ -169,7 +169,7 @@
 					Message
 				</label>
 				<textarea
-					class="block w-full h-48 px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white"
+					class="block w-full h-48 px-4 py-3 mb-3 leading-tight text-gray-700 bg-white border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white"
 					id="message"
 					name="message"
 					placeholder="Message"

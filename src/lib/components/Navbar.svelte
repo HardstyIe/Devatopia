@@ -28,10 +28,10 @@
 
 	<!-- Navigation pour grands écrans -->
 	<div
-		class="relative z-10 items-center justify-center hidden w-2/3 h-56 bg-center bg-no-repeat bg-cover lg:flex"
+		class="relative z-10 items-center justify-end hidden w-2/3 h-full bg-no-repeat bg-cover xl:bg-contain xl:bg-right-top xl:flex"
 		style="background-image: url({$myData.fr.appbar.assets.background});"
 	>
-		<ul class="z-10 flex items-center gap-20 text-white">
+		<ul class="z-10 flex items-center gap-20 pr-10 text-white">
 			{#each $myData.fr.appbar.text as text}
 				<li>
 					<a href={`#${text.toLowerCase()}`} class="text-lg">{text}</a>
@@ -43,7 +43,7 @@
 	<!-- Bouton du menu burger (visible uniquement sur les petits écrans) -->
 	<button
 		aria-label="Toggle navigation"
-		class="p-2 mr-7 lg:hidden"
+		class="p-2 mr-7 xl:hidden"
 		on:click|stopPropagation={toggleMenu}
 	>
 		<span aria-hidden="true">
@@ -56,7 +56,7 @@
 	</button>
 </nav>
 
-<nav class="relative h-full lg:hidden">
+<nav class="relative h-full xl:hidden">
 	<!-- Overlay (Assombrissement de l'arrière-plan) -->
 	{#if menuOpen}
 		<div class="fixed inset-0 z-40 bg-black opacity-50" />

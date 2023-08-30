@@ -7,7 +7,7 @@
 	}
 </script>
 
-<main>
+<section>
 	<article>
 		<h2 class="text-2xl font-bold text-black">
 			{#each $myData?.fr?.carrousel?.[1]?.title.split(highlightRegex) as part, i}
@@ -23,34 +23,22 @@
 		<div class="grid grid-cols-2 gap-14">
 			<!-- Première ligne -->
 			<div class="flex items-center justify-center">
-				<img
-					src={$myData.fr.carrousel[1].assets[0]}
-					alt=""
-					class="shadow-md"
-					width="700"
-					height="500"
-				/>
+				<img src={$myData.fr.carrousel[1].assets[0]} alt="" width="700" height="500" />
 			</div>
 			{#if $myData.fr.carrousel[1].assets.length > 1}
 				<div class="flex items-center justify-center">
-					<img
-						src={$myData.fr.carrousel[1].assets[1]}
-						alt=""
-						class="shadow-md"
-						width="350"
-						height="300"
-					/>
+					<img src={$myData.fr.carrousel[1].assets[1]} alt="" width="350" height="300" />
 				</div>
 			{/if}
 			<!-- Deuxième ligne -->
 			{#each $myData.fr.carrousel[1].assets.slice(2) as asset, i}
 				<div class="flex items-center justify-center">
-					<img src={asset} alt="" class="shadow-md" width="350" height="300" />
+					<img src={asset} alt="" width="350" height="300" />
 				</div>
 			{/each}
 		</div>
 	</article>
-</main>
+</section>
 
 <style>
 </style>

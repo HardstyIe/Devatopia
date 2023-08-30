@@ -7,7 +7,7 @@
 	}
 </script>
 
-<main id="services">
+<section id="services">
 	<article>
 		<h2 class="text-2xl font-bold text-black">
 			{#each $myData?.fr?.carrousel?.[0]?.title.split(highlightRegex) as part, i}
@@ -47,7 +47,7 @@
 			{/each}
 		</div>
 	</article>
-</main>
+</section>
 
 <style>
 </style>

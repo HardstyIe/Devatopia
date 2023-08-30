@@ -6,7 +6,7 @@ const initialData: Data = {
 		appbar: {
 			text: ['Équipe', 'Technologies', 'Services', 'Contact'],
 			assets: {
-				background: '/assets/images/Forme_NavBar.svg',
+				background: '/assets/images/Forme_NavBartest.webp',
 				logo: '/assets/logo_devatopia/devatopia_logo_black.svg',
 				darkThemeLogo: '/assets/logo_devatopia/devatopia_logo_white.webp'
 			}

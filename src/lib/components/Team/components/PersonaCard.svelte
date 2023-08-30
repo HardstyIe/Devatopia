@@ -7,7 +7,7 @@
 	};
 </script>
 
-<main
+<section
 	class="relative p-8 mx-auto mb-12 rounded-lg shadow-2xl w-60 h-80 sm:w-60 md:w-64 lg:w-72 bg-devatopia-footer"
 >
 	<!-- Image centrée qui déborde en haut -->
@@ -25,7 +25,7 @@
 		<p class="mt-2 text-sm text-white md:text-base">{person.subtitle}</p>
 		<p class="mt-4 text-sm text-white md:text-sm">{person.text}</p>
 	</div>
-</main>
+</section>
 
 <style>
 	.card-img {
