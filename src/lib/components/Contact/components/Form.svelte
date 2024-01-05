@@ -51,6 +51,7 @@
 					type="text"
 					placeholder="Nom"
 					required
+					autocomplete="family-name"
 				/>
 			</div>
 
@@ -68,6 +69,7 @@
 					type="text"
 					placeholder="Prénom"
 					required
+					autocomplete="given-name"
 				/>
 			</div>
 
@@ -85,6 +87,7 @@
 					type="email"
 					placeholder="Email"
 					required
+					autocomplete="email"
 				/>
 			</div>
 
@@ -101,6 +104,7 @@
 					name="telephone"
 					type="tel"
 					placeholder="Téléphone"
+					autocapitalize="tel"
 				/>
 			</div>
 
@@ -117,6 +121,7 @@
 					name="society"
 					type="text"
 					placeholder="Société"
+					autocomplete="organization"
 				/>
 			</div>
 
@@ -162,7 +167,7 @@
 					/>
 					<label for="acceptPolicy" class="ml-2 text-sm text-gray-600" />
 					J'accepte les
-					<a href="#" class="underline cursor-pointer" on:click={openPrivacyModal}>
+					<a href="#PrivacyPolicy" class="underline cursor-pointer" on:click={openPrivacyModal}>
 						politiques de confidentialité
 					</a>
 				</div>

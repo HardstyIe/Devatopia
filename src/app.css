@@ -4,9 +4,9 @@
 @import 'daisyui/dist/full.css';
 
 :root {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 html {
-  color: #000000;
+	color: #000000;
 }
