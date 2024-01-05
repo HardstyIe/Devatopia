@@ -7,7 +7,7 @@ module.exports = {
 		...(production
 			? [
 					require('@fullhuman/postcss-purgecss')({
-						content: ['./src/**/*.html', './src/**/*.svelte'],
+						content: ['./src/**/*.html', './src/**/*.svelte', 'node_modules/svelte-sonner/dist/**'],
 						defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || []
 					})
 			  ]

@@ -4,8 +4,10 @@
 	import '../app.css';
 </script>
 
-<Navbar />
-<div class="container mx-auto mt-20">
-	<slot />
+<div class="scroll-smooth">
+	<Navbar />
+	<div class="container h-full mx-auto">
+		<slot />
+	</div>
+	<Footer />
 </div>
-<Footer />

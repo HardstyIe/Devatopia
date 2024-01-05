@@ -1,0 +1,28 @@
+[
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Maxime Dehay",
+    "jobTitle": "Associé gérant",
+    "description": "Maxime est notre expert dans le développement Mobile, Web et API.",
+    "image": "https://devatopia.vercel.app/assets/persona/Maxime.webp",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Devatopia"
+    },
+    "url": "https://devatopia.vercel.app"
+  },
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Alexandre Louis",
+    "jobTitle": "Associé gérant",
+    "description": "Alexandre est notre concepteur UI/UX mais également développeur Mobile, Web et API.",
+    "image": "https://devatopia.vercel.app/assets/persona/Alexandre.webp",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Devatopia"
+    },
+    "url": "https://devatopia.vercel.app"
+  }
+]

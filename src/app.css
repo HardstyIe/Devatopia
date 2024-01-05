@@ -2,3 +2,11 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import 'daisyui/dist/full.css';
+
+:root {
+  scroll-behavior: smooth;
+}
+
+html {
+  color: #000000;
+}
